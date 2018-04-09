@@ -157,6 +157,8 @@ def demo(cfgfile, weightfile):
                 pidlist = []
             for pid in pidlist:
                 os.kill(pid,signal.SIGTERM)
+                print("Killing the ffmpeg process...")
+                time.sleep(2)
 
             # print("disconnecting")
             # mambo.disconnect()
